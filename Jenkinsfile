@@ -13,7 +13,7 @@
         } 
         
         
-        s
+        
                stage('docker')
 {
                   steps {
