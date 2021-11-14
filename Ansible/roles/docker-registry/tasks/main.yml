@@ -1,7 +1,5 @@
 ---
 # tasks file for docker-registry.
-
-
 - name: Log into DockerHub
   docker_login:
     username: mahmoudnouri
@@ -11,5 +9,5 @@
   docker_image:
     name: projet1:latest
     repository: mahmoudnouri/projet1
-    tag: end 
+    tag: latest
     push: yes
