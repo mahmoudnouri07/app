@@ -10,4 +10,16 @@
                             url: 'https://github.com/mahmoudnouri07/app.git']]])
                 }
             }
-        } }}
+        } 
+        
+        }
+        
+               stage('docker')
+{
+                  steps {
+                         script{
+                         sh "ansible-playbook Ansible/docker.yml -i Ansible/inventory/host.yml "
+                                }
+                        }
+  }
+        }
